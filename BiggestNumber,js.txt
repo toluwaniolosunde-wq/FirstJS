@@ -1,0 +1,18 @@
+let input = [15, 4, 27, 76, 32, 41];
+
+let biggest = 0;
+let secondBiggest = 0;
+
+for (let index = 0; index < input.length; index++) {
+    let number = input[index];
+
+    if (number > biggest) {
+        secondBiggest = biggest;
+        biggest = number;
+    } 
+    else if (number > secondBiggest) {
+        secondBiggest = number;
+    }
+}
+
+console.log(biggest, secondBiggest);
